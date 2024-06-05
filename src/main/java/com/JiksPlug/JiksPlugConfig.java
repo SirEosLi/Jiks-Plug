@@ -7,6 +7,11 @@ import net.runelite.client.config.ConfigItem;
 @ConfigGroup("JCH")
 public interface JiksPlugConfig extends Config
 {
+	default String greeting()
+	{
+		return "Hello";
+	}
+
 	@ConfigItem(
 			keyName = "sendDataToBot",
 			name = "Send Data to Bot",

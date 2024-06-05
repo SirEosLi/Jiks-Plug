@@ -3,11 +3,11 @@ package com.JiksPlug;
 import net.runelite.client.RuneLite;
 import net.runelite.client.externalplugins.ExternalPluginManager;
 
-public class JCHPluginTest
+public class JiksPlugPluginTest
 {
 	public static void main(String[] args) throws Exception
 	{
-		ExternalPluginManager.loadBuiltin(JiksPlugPlugin.class);
+		ExternalPluginManager.loadBuiltin(JiksPlug.class);
 		RuneLite.main(args);
 	}
 }
