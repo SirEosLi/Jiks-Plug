@@ -14,7 +14,7 @@ import net.runelite.client.eventbus.EventBus;
 @PluginDescriptor(
 		name = "Jiks Plug",
 		description = "Jiks companion plugin, More immersive clan system, companion to Sir Jik Li discord bot",
-		tags = {"clan", "jik", "sir jik li", "winter"}
+		tags = {"clan", "jik", "sir jik li", "winter", "transmog"}
 )
 public class JiksPlugPlugin extends Plugin
 {
