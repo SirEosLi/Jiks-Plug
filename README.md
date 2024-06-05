@@ -6,7 +6,7 @@ This plugin is designed to work with the discord bot "Sir Jik Li", expanding on 
 * Events tracking
 * Clan wide annc
 * Transmog system
-** You need to own the gear at least ones to unlock it for transmog, visible to other clannies with the plugin.
+* * You need to own the gear at least ones to unlock it for transmog, visible to other clannies with the plugin.
 * Task master
 * clan bounties
 * looking for group
