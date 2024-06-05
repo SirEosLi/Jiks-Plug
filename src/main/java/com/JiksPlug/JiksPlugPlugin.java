@@ -8,21 +8,24 @@ import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
 import net.runelite.api.events.GameTick;
+import net.runelite.client.eventbus.EventBus;
 
 @Slf4j
 @PluginDescriptor(
 		name = "Jiks Plug",
-		description = "Show a timer to the next call change and game/wave duration in chat.",
-		tags = {"minigame", "overlay", "timer"}
+		description = "Jiks companion plugin, More immersive clan system, companion to Sir Jik Li discord bot",
+		tags = {"clan", "jik", "sir jik li", "winter"}
 )
 public class JiksPlugPlugin extends Plugin
 {
 	@Inject
-	private ClanHubConfig config;
+	private JiksPlugConfig config;
 
 	@Inject
 	private Transmog transmog;
 
+	@Inject
+	private EventBus eventBus;
 
 	@Override
 	protected void startUp() throws Exception
@@ -33,7 +36,7 @@ public class JiksPlugPlugin extends Plugin
 			transmog.startUp();
 			eventBus.register(transmog);
 		}
-
+		/*
 		if (config.showOngoingEvents())
 		{
 			// Register events for showing ongoing events and announcements
@@ -43,6 +46,7 @@ public class JiksPlugPlugin extends Plugin
 		{
 			// Register taskmaster events
 		}
+		*/
 	}
 
 	@Override
@@ -54,6 +58,7 @@ public class JiksPlugPlugin extends Plugin
 	@Subscribe
 	public void onGameTick(GameTick event)
 	{
+		/*
 		if (config.sendDataToBot())
 		{
 			// Logic to send data to the Discord bot
@@ -65,11 +70,8 @@ public class JiksPlugPlugin extends Plugin
 		}
 
 		// Other periodic tasks
+
+		 */
 	}
 
-	@Provides
-	ClanHubConfig provideConfig(ConfigManager configManager)
-	{
-		return configManager.getConfig(ClanHubConfig.class);
-	}
 }
